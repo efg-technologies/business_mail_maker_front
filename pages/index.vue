@@ -54,7 +54,7 @@
             v-model="row_text"
             class="form-control"
             rows="3"
-            placeholder="変換したい文章をここに入れてください。"/>
+            placeholder="変換したい文章をいれてください。(例 : 永峰、早く書類送れ byデザイナー伊藤)"/>
         </div>
       </div>
       <div class="row">
@@ -72,7 +72,7 @@
             v-model="translate_text"
             class="form-control"
             rows="6"
-            placeholder="変換された文章がここに出力されます。"/>
+            placeholder="変換された文章がここに出力されます。(例 : 永峰様 お疲れ様です。デザイナーの伊藤です。書類をご送付頂きますようお願い申し上げます。　以上ご確認の程よろしくお願いいたします。)"/>
         </div>
       </div>
     </section>
