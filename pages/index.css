@@ -5,6 +5,37 @@
   width: 100%;
   text-align: center;
 }
+
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.show > .btn-outline-primary.dropdown-toggle {
+  background: #009ab1;
+}
+.select-example
+  button
+  .btn-outline-primary:not(:disabled):not(.disabled):active,
+.btn-outline-primary:hover {
+  background: #009ab1;
+}
+.select-example button.btn-primary,
+.select-example button.btn-primary.outline {
+  border: 3px solid #009ab1;
+}
+.select-example button.btn-outline-primary {
+  color: #009ab1;
+  border-color: #009ab1;
+}
+
+.select-example button.btn-outline-primary:hover {
+  border-color: #009ab1;
+  color: #fff;
+}
+
+.select-example button.btn-primary:not(:disabled):not(.disabled):active,
+.select-example button.btn-primary:not(:disabled):not(.disabled).active,
+.select-example button.show > .btn-primary.dropdown-toggle {
+  background-color: #009ab1;
+}
 main {
   text-align: center;
 }
@@ -14,4 +45,10 @@ h2 {
 }
 textarea {
   margin: 13px 0;
+}
+button[type='submit'] {
+  background: linear-gradient(to right, #78bffa, #1a5fca);
+  border: none;
+  font-weight: 700;
+  padding: 9px 42px;
 }

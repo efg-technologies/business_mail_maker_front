@@ -20,7 +20,7 @@
 
     <section class="container">
       <div class="row">
-        <div class="col">
+        <div class="col select-example">
           <button
             type="button"
             class="btn btn-outline-primary"
