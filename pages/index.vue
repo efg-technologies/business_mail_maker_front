@@ -1,54 +1,66 @@
 <template>
-  <section class="container">
-    <div class="row">
-      <div class="col">
-        <button
-          type="button"
-          class="btn btn-outline-primary"
-          @click="f1">
-          パターン1
-        </button>
-        <button
-          type="button"
-          class="btn btn-outline-primary"
-          @click="f2">
-          パターン2
-        </button>
-        <button
-          type="button"
-          class="btn btn-outline-primary"
-          @click="f3">
-          パターン3
-        </button>
+  <main>
+    <nav class="navbar navbar-dark">
+      <a
+        class="navbar-brand"
+        href="#">
+        <img
+          src="~/assets/logo.png"
+          height="32">
+      </a>
+    </nav>
+
+    <section class="container">
+      <div class="row">
+        <div class="col">
+          <button
+            type="button"
+            class="btn btn-outline-primary"
+            @click="f1">
+            パターン1
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-primary"
+            @click="f2">
+            パターン2
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-primary"
+            @click="f3">
+            パターン3
+          </button>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <textarea
-          id="exampleFormControlTextarea1"
-          v-model="row_text"
-          class="form-control"
-          rows="3"/>
+      <div class="row">
+        <div class="col">
+          <textarea
+            id="exampleFormControlTextarea1"
+            v-model="row_text"
+            class="form-control"
+            rows="3"/>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <button
-          class="btn btn-primary"
-          type="submit"
-          @click="translate">変換</button>
+      <div class="row">
+        <div class="col">
+          <button
+            class="btn btn-primary"
+            type="submit"
+            @click="translate">変換</button>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <textarea
-          id="exampleFormControlTextarea1"
-          v-model="translate_text"
-          class="form-control"
-          rows="3"/>
+      <div class="row">
+        <div class="col">
+          <textarea
+            id="exampleFormControlTextarea1"
+            v-model="translate_text"
+            class="form-control"
+            rows="3"/>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 </template>
 
 <script>
