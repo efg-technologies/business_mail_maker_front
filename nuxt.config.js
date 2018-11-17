@@ -18,7 +18,10 @@ module.exports = {
           '「ビジネスメールを楽にしよう」変換ボタンを押すだけで、ビジネスメールへ自動的に変換されます。'
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    htmlAttrs: {
+      prefix: 'og: https://modest-bose-57ee0c.netlify.com/_nuxt/img/3f64d95.png'
+    }
   },
 
   /*
