@@ -10,6 +10,14 @@
       </a>
     </nav>
 
+    <h2>
+      ビジネスメールを<br>
+      楽にしよう
+    </h2>
+
+    <p>以下のフォームに入力すると、<br>
+      ビジネスメール向けの文章に変換します。</p>
+
     <section class="container">
       <div class="row">
         <div class="col">
@@ -17,19 +25,25 @@
             type="button"
             class="btn btn-outline-primary"
             @click="f1">
-            パターン1
+            例文1
           </button>
           <button
             type="button"
             class="btn btn-outline-primary"
             @click="f2">
-            パターン2
+            例文2
           </button>
           <button
             type="button"
             class="btn btn-outline-primary"
             @click="f3">
-            パターン3
+            例文3
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-primary"
+            @click="f4">
+            例文4
           </button>
         </div>
       </div>
@@ -39,7 +53,8 @@
             id="exampleFormControlTextarea1"
             v-model="row_text"
             class="form-control"
-            rows="3"/>
+            rows="3"
+            placeholder="変換したい文章をここに入れてください。"/>
         </div>
       </div>
       <div class="row">
@@ -47,7 +62,7 @@
           <button
             class="btn btn-primary"
             type="submit"
-            @click="translate">変換</button>
+            @click="translate">丁寧文へ変換</button>
         </div>
       </div>
       <div class="row">
@@ -56,7 +71,8 @@
             id="exampleFormControlTextarea1"
             v-model="translate_text"
             class="form-control"
-            rows="3"/>
+            rows="3"
+            placeholder="変換された文章がここに出力されます。"/>
         </div>
       </div>
     </section>
@@ -104,6 +120,10 @@ export default {
     f3() {
       this.row_text =
         'この前の商談ではお世話になりました。良い取引ができたと思います。またお願いします。'
+    },
+    f4() {
+      this.row_text =
+        '書類を送ります。この前の会議で提案したものです。よろしくお願いします。'
     },
     translate() {
       this.translate_text = this.dict[this.row_text]
